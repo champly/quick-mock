@@ -3,13 +3,14 @@
     "routers":[
         {
             "name":"/",
-            "method":"get",
+            "method":"get,post",
             "response":"{'code':200,'data':'this url is /'}"
         },
         {
             "name":"/hello",
-            "method":"get",
-            "response":"{'code':200,'data':this url is /hello'}"
+            "method":"get,post",
+            "status_code":"302",
+            "response":"https://github.com/champly/quick-mock"
         }
     ]
 }

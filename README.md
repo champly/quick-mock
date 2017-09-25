@@ -14,7 +14,8 @@
         {
             "name":"/hello",
             "method":"get",
-            "response":"{'code':200,'data':this url is /hello'}"
+            "status_code":"302",
+            "response":"https://github.com/champly/quick-mock"
         }
     ]
 }

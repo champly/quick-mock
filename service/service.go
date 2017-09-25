@@ -30,5 +30,13 @@ func (m *MockService) handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	w.Write([]byte(strings.Replace(router.Response, "'", "\"", -1)))
+	responseStr, statusCode := libs.AnalysisResponse(router)
+
+	if statusCode == 302 || statusCode == 301 {
+		http.Redirect(w, r, responseStr, statusCode)
+		return
+	}
+
+	w.WriteHeader(statusCode)
+	w.Write([]byte(strings.Replace(responseStr, "'", "\"", -1)))
 }
