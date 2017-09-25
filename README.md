@@ -8,7 +8,7 @@
     "routers":[
         {
             "name":"/",
-            "method":"get",
+            "method":"get,post",
             "response":"{'code':200,'data':'this url is /'}"
         },
         {
@@ -23,7 +23,8 @@
 - port : 监听的端口号
 - routers : 路由配置
 > - name : 路由名称
-> - method : 请求方式(不区分大小写)
+> - method : 请求方式(不区分大小写),可以多种方式,用分号分割
+> - status_code : 返回状态码，如果是302或者301则跳转到response中
 > - response : 返回内容(会自动把**单引号**替换成**双引号**)
 ***
 ## 需要注意的是
