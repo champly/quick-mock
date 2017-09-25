@@ -24,7 +24,7 @@ func (m *MockService) Start() {
 }
 
 func (m *MockService) handler(w http.ResponseWriter, r *http.Request) {
-	router, err := libs.GetRouterByURL(r.RequestURI, r.Method, m.Property.Routers)
+	router, err := libs.GetRouterByURL(r.URL.Path, r.Method, m.Property.Routers)
 	if err != nil {
 		w.WriteHeader(http.StatusNotFound)
 		return
