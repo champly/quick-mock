@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"runtime"
 
-	"github.com/ChamPly/quick-mock/libs"
-	"github.com/ChamPly/quick-mock/service"
+	"github.com/champly/quick-mock/libs"
+	"github.com/champly/quick-mock/service"
 )
 
 func main() {

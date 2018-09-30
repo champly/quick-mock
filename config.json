@@ -12,5 +12,9 @@
             "status_code":"302",
             "response":"https://github.com/champly/quick-mock"
         }
-    ]
+    ],
+    "static_property":{
+            "path":"./bin",
+            "router":"/staticfile"
+     }
 }

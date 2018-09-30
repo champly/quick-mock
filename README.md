@@ -1,5 +1,5 @@
 # QuickMock
-&emsp;&emsp;通过配置json，快速构建http请求接口，方便前端程序猿快速调用接口。
+&emsp;&emsp;通过配置json，快速构建http请求接口，方便前端程序猿快速调用接口，直接可以执行，不需要安装。
 
 ## 配置文件说明
 ```json

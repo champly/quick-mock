@@ -8,8 +8,8 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/ChamPly/quick-mock/conf"
-	"github.com/ChamPly/quick-mock/model"
+	"github.com/champly/quick-mock/conf"
+	"github.com/champly/quick-mock/model"
 )
 
 func ReadProperty() (property model.Property, err error) {

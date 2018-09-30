@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/ChamPly/quick-mock/model"
+	"github.com/champly/quick-mock/model"
 )
 
 func GetRouterByURL(url string, method string, routers []model.Router) (router model.Router, err error) {

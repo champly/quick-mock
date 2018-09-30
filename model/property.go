@@ -1,8 +1,9 @@
 package model
 
 type Property struct {
-	Port    string   `json:"port"`
-	Routers []Router `json:"routers"`
+	Port      string         `json:"port"`
+	Routers   []Router       `json:"routers"`
+	StaticPro StaticProperty `json:"static_property"`
 }
 
 type Router struct {
@@ -11,4 +12,9 @@ type Router struct {
 	Method     string `json:"method"`
 	StatusCode string `json:"status_code"`
 	Response   string `json:"response"`
+}
+
+type StaticProperty struct {
+	Path   string `json:"path"`
+	Router string `json:"router"`
 }
